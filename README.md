@@ -1,4 +1,6 @@
-# Introduction
+# MetaAdapt
+
+The MetaAdapt repository is the PyTorch implementation of ACL 2023 Paper meta
 
 This is a reproduction of ACL 2023 Paper [MetaAdapt: Domain Adaptive Few-Shot Misinformation Detection via Meta Learning](https://arxiv.org/abs/2305.12692)
 
