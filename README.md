@@ -1,7 +1,5 @@
 # MetaAdapt
 
-The MetaAdapt repository is the PyTorch implementation of ACL 2023 Paper meta
-
 This is a reproduction of ACL 2023 Paper [MetaAdapt: Domain Adaptive Few-Shot Misinformation Detection via Meta Learning](https://arxiv.org/abs/2305.12692)
 
 <img src=pics/intro.png>
@@ -11,6 +9,21 @@ This is a reproduction of ACL 2023 Paper [MetaAdapt: Domain Adaptive Few-Shot Mi
 原论文的数据集都是公开的，可以在网上找到他们。<br>
 这个仓库的数据集是基于 GossipCop 进行改编的,你可以在此找到他们。(https://github.com/junyachen/Data-examples)<br>
 请确保每种类型的数据集下包含**real.json**和**fake.json**，你可以使用`dataprocess.py`对数据集进行预处理。<br>
+请将数据按照下面的格式存放：
+
+```
+--MetaAdapt
+    --data
+        --GossipCop_Origin
+            --real.json
+            --fake.json
+        --GossipCop_Story_Based
+            ...
+        --GossipCop_Style_Based
+        ...
+    ...
+```
+
 要运行代码，需要 PyTorch 和 Transformers，具体请参阅 requirements.txt 了解运行环境。
 
 ## Run MetaAdapt
